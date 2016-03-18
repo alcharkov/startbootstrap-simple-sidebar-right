@@ -1,4 +1,5 @@
 /*!
+ * site: https://github.com/alcharkov/startbootstrap-simple-sidebar-right
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -15,16 +16,16 @@
 }
 
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-right: 250px;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 250px;
+    right: 250px;
     width: 0;
     height: 100%;
-    margin-left: -250px;
+    margin-right: -250px;
     overflow-y: auto;
     background: #000;
     -webkit-transition: all 0.5s ease;
@@ -38,6 +39,7 @@
 }
 
 #page-content-wrapper {
+    float:left;
     width: 100%;
     position: absolute;
     padding: 15px;
@@ -98,11 +100,11 @@
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 250px;
+        padding-right: 250px;
     }
 
     #wrapper.toggled {
-        padding-left: 0;
+        padding-right: 0;
     }
 
     #sidebar-wrapper {
